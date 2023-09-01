@@ -1,0 +1,21 @@
+server:
+  port: 8093
+management:
+  endpoint:
+    metrics:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+    prometheus:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    health:
+      show-details: always
+spring:
+  jackson:
+    default-property-inclusion: non_null
