@@ -1,13 +1,8 @@
 spring:
-  servlet:
-    context-path: /supplier
-    multipart:
-      max-file-size: 3MB
-      max-request-size: 3MB
   main:
     allow-bean-definition-overriding: true
   application:
-    name: excel-service
+    name: business-service
   cloud:
     config:
       enabled: true
