@@ -22,8 +22,9 @@ public class MasterDataCache extends RedisSessionContext {
         return "SUPPLIER_MASTER_DATA";
     }
 
+
     @Override
     public Integer sessionExpiryTime() {
-        return -1;
+        return null;
     }
 }
